@@ -1,0 +1,49 @@
+extends ../inc/layout
+
+block content
+
+    .center
+        :marked
+
+            # Links
+
+            ## Direct LInks
+
+            ```
+            [Google](http://google.com)
+            ```
+
+            [Google](http://google.com)
+            
+            ## Reference-style Links
+
+            ```
+            [Daring Fireball][ref1]
+
+            [ref1]:             https://daringfireball.net/projects/markdown/syntax     "Daring Fireball"
+            ```
+
+            [Daring Fireball][ref1]
+
+            ## Reference-style Shortcut Links
+
+            ```
+            [Daring Fireball][] shortcut reference.
+
+            [Daring Fireball]:  http://daringfireball.net/
+            ```
+
+            [Daring Fireball][] shortcut reference.
+
+
+            # Automatic Links
+
+            ```
+            <https://guides.github.com/features/mastering-markdown/>
+            ```
+
+            <https://guides.github.com/features/mastering-markdown/>
+
+
+            [ref1]:             https://daringfireball.net/projects/markdown/syntax     "Daring Fireball"
+            [Daring Fireball]:  http://daringfireball.net/

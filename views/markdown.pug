@@ -1,0 +1,124 @@
+extends ./inc/layout
+
+block content
+
+    .center
+        :marked
+
+            Header 1
+            ========
+
+            Plain Text
+            ----------
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            ### Unordered List
+            
+            * One
+            * Two
+                * Two+
+            * Three
+            * [Google](http://google.com)
+
+            ### Ordered List
+
+            1. One
+            2. Two
+            1. Three
+                1. Three+
+                1. Three++
+            1. [Google](http://google.com)
+            1. [Daring Fireball][ref1]
+            1. [Daring Fireball][] shortcut reference.
+
+            ### Block Quote
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+            > Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+            Code Block
+            ----------
+
+            ```javascript
+            class Example {
+                constructor() {
+                    this.prop = [];
+                }
+
+                doit(arg) {
+                    console.log(arg);
+                }
+            }
+            ```
+
+            ```CoffeeScript
+            class Example
+                constructor: ->
+                    @prop = []
+
+                doit: (arg) =>
+                    console.log arg
+            ```
+
+            or just indent...
+
+                class Example
+                    constructor: ->
+                        @prop = []
+
+                    doit: (arg) =>
+                        console.log arg
+
+
+            ### Inline
+
+            Lorem ipsum dolor sit amet, `consectetur adipiscing elit`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+            ## Emphasis
+
+            *single asterisks*
+
+            _single underscores_
+
+            **double asterisks**
+
+            __double underscores__
+
+            \*this text is surrounded by literal asterisks\*
+
+
+            Please don't use any `<blink>` tags.
+
+
+            # Images
+
+            ![Alt text](/image/blake.001-640.png "Optional title")
+
+            ![More alt text][pic1]
+
+            ### Automatic Links
+
+            <https://guides.github.com/features/mastering-markdown/>
+
+
+            # More
+
+            First Header | Second Header
+            ------------ | -------------
+            Content from cell 1 | Content from cell 2
+            Content in the first column | Content in the second column
+
+
+            ~~strick through~~
+
+
+
+            [ref1]:             https://daringfireball.net/projects/markdown/syntax     "Daring Fireball"
+            [Daring Fireball]:  http://daringfireball.net/
+
+            [pic1]:             /image/rowdy.002-640.png  "Optional title attribute"

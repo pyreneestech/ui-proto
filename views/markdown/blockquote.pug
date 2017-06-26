@@ -1,0 +1,93 @@
+extends ../inc/layout
+
+block content
+
+    .center
+        :marked
+
+            Code Block
+            ========
+
+            ## Backticks
+
+            ````javascript
+            ```javascript
+            class Example {
+                constructor() {
+                    this.prop = [];
+                }
+
+                doit(arg) {
+                    console.log(arg);
+                }
+            }
+            ```
+            ````
+            Produces...
+
+            ```javascript
+            class Example {
+                constructor() {
+                    this.prop = [];
+                }
+
+                doit(arg) {
+                    console.log(arg);
+                }
+            }
+            ```
+
+            ## Or just indent...
+
+            ```
+                class Example
+                    constructor: ->
+                        @prop = []
+
+                    doit: (arg) =>
+                        console.log arg
+            ```
+
+            Produces...
+
+                class Example
+                    constructor: ->
+                        @prop = []
+
+                    doit: (arg) =>
+                        console.log arg
+
+
+            Blockquote
+            ========
+
+            Use '>'
+
+            ```
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+            > Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            ```
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+            > Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+            Inline
+            ========
+
+            Use backticks
+
+            ```
+            Lorem ipsum dolor sit amet, `consectetur adipiscing elit`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            ```
+
+            Lorem ipsum dolor sit amet, `consectetur adipiscing elit`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

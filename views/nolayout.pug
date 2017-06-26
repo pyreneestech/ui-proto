@@ -1,0 +1,60 @@
+doctype html 
+html(lang="en")
+    head 
+        title Example 
+
+        meta(charset="utf-8")
+        meta(content="IE=edge", http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1", name="viewport")
+
+        link(rel='stylesheet', href='/vendor/bootstrap/bootstrap.css', type='text/css')
+        link(rel='stylesheet', href='/css/styles.css', type='text/css')
+
+        script(src="https://unpkg.com/react@15/dist/react.js")
+        script(src="https://unpkg.com/react-dom@15/dist/react-dom.js")
+
+        script(src="https://unpkg.com/babel-standalone@6/babel.min.js")
+
+        script(src="/js/test.js" type="text/javascript")
+ 
+    body
+        .container
+            include inc/header
+
+            section#content
+                h1.title Welcome!
+
+                p.
+                    This page demonstrates rendering technologies without a layout but uses common 
+                    headers and footers.
+
+                h2 Pug
+                .center
+                    p Hellow, world from Pug.
+ 
+                // Test babel ES6
+                h2 Babel
+                #output
+
+                // React root
+                h2 React
+                #root
+
+            include inc/footer
+
+        script(type="text/javascript").
+            doit();
+
+        script(type="text/babel").
+            const getMessage = () => "Hello World from Babel!"
+            document.getElementById('output').innerHTML = getMessage()
+
+        script(type="text/babel").
+            ReactDOM.render(
+              <p>Hello, world from React!</p>,
+              document.getElementById('root')
+            )            
+
+        script(src="/vendor/jquery/jquery-3.1.0.min.js" type="text/javascript")
+        script(src="/vendor/bootstrap/bootstrap.js" type="text/javascript")
+

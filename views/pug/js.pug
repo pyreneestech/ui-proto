@@ -1,0 +1,10 @@
+extends ../inc/layout
+
+block content
+
+  h1 Produce a List
+  -
+    var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+
+  each item in list
+    li= item

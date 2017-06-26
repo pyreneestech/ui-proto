@@ -1,0 +1,46 @@
+extends ../inc/layout
+
+block content
+
+  h1 React Function
+
+  :marked
+    ```
+    script(type="text/babel").
+      const Header = (props) => <h1>{props.text}</h1>
+
+      const App = () => {
+        return (
+          <div>
+            <Header text='The Following...' />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        )
+      }
+
+      ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+      )            
+    ```
+
+  #root
+
+  script(type="text/babel").
+    const Header = (props) => <h1>{props.text}</h1>
+
+    const App = () => {
+      return (
+        <div>
+          <Header text='The Following...' />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      )
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    )            

@@ -1,0 +1,29 @@
+extends ../inc/layout
+
+block content
+
+    .center
+        :marked
+
+            # Images
+
+            ## Direct Image
+
+            ```
+            ![Alt text](/image/blake.001-256.png "Optional title")
+            ```
+
+            ![Alt text](/image/blake.001-256.png "Optional title")
+
+            ## Reference-style Image 
+
+            ```
+            ![More alt text][pic1]
+
+            [pic1]:             /image/rowdy.002-256.png  "Optional title attribute"
+            ```
+
+            ![More alt text][pic1]
+
+
+            [pic1]:             /image/rowdy.002-256.png  "Optional title attribute"
